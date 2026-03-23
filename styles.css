@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* MAIN BACKGROUND */
+.main {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("Images/tree.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar (header navigation for all pages) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navbar ul li a:hover {
+    color: #ff7200;
+}
+
+/* Hero section (index.html landing section) */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    transform: translateY(-90px);
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content span {
+    color: #ff7200;
+}
+
+.hero-content p {
+    margin: 15px 0;
+}
+/* FOOTER */
+footer {
+    background: #020617;
+    color: white;
+    padding: 40px 20px 10px;
+}
+
+/* CONTAINER */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* SECTIONS */
+.footer-section {
+    margin: 20px;
+    min-width: 200px;
+}
+
+/* HEADINGS */
+.footer-section h3,
+.footer-section h4 {
+    color: #ff7200;
+    margin-bottom: 10px;
+}
+
+/* LINKS */
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ff7200;
+}
+
+/* BOTTOM TEXT */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.primary {
+    background: #ff7200;
+    color: black;
+}
+
+.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    transform: translateY(-90px);
+}
+
+.feature-card {
+    background: rgba(30,41,59,0.9);
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 15px rgba(255,114,0,0.5);
+}
+
+.feature-card ion-icon {
+    font-size: 40px;
+    color: #ff7200;
+}
+
+/* COURSES */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.course-card {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.course-card h3 {
+    padding: 10px;
+}
+
+.course-card p {
+    padding: 0 10px;
+}
+
+/* RATING */
+.rating {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.rating ion-icon {
+    color: gold;
+    font-size: 16px;
+}
+
+.rating span {
+    margin-left: 5px;
+}
+
+/* PRICE */
+.price {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* TAGS */
+.tags {
+    padding: 10px;
+}
+
+.premium {
+    background: purple;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.best {
+    background: teal;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+.login-container,
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+
+.login-box,
+.contact-box {
+    width: 380px;       
+    padding: 35px;      
+    background: rgba(0,0,0,0.9);
+    border-radius: 15px;
+    text-align: center;
+
+    position: static;          
+}
+
+/* LOGIN TITLE */
+.login-title,
+.contact-title {
+    background: white;
+    color: #ff7200;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.login-box input,
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    color: white;
+}
+
+/* TEXTAREA */
+.contact-box textarea {
+    height: 100px;
+}
+
+
+.login-btn,
+.contact-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff7200;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover,
+.contact-btn:hover {
+    background: #ff8c1a;
+}
+
+.social-icons ion-icon {
+    font-size: 22px;
+    margin: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons ion-icon:hover {
+    color: #ff7200;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: #000814; /* dark background */
+    padding: 40px 0;
+}
+/* COURSE DETAILS*/
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* BOX */
+.details-box {
+    width: 600px;
+    background: rgba(0,0,0,0.9);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* TEXT SPACING */
+.details-box h3 {
+    margin-top: 15px;
+}
+
+.details-box ul {
+    margin-left: 20px;
+}
+.course-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.course-card {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tags {
+    margin-top: auto;
+}
+
+
+
+
+/* FIXED DETAILS PAGE */
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 20px;
+}
+
+/* BOX */
+.details-box {
+    width: 700px;
+    background: rgba(0,0,0,0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,114,0,0.3);
+}
+
+/* IMAGE */
+.details-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* LIST */
+.details-box ul {
+    margin: 10px 0 20px 20px;
+}
+
+/* BUTTON */
+.enroll-btn {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ADD THIS */
+.details-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+.details-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* ADD THIS */
+.course-card {
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+/* ADD THIS */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+/* ADD THIS */
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.details-box {
+    width: 60%;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+/* RATING */
+.rating {
+    margin: 10px 0;
+}
+
+.rating ion-icon {
+    color: gold;
+}
+
+/* DESCRIPTION TEXT */
+.details-box p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.details-box {
+    width: 60%;
+    margin: auto;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+    line-height: 1.6;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 8px 0;
+}
+
+.rating ion-icon {
+    color: gold;
+    font-size: 16px;
+}
+
+.rating span {
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+.details-box {
+    width: 65%;
+    margin: auto;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(12px);
+
+    text-align: center;
+    line-height: 1.6;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.details-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.details-box ul {
+    text-align: left;
+    max-width: 400px;
+    margin: 15px auto;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+
+    border-radius: 25px;
+    border: none;
+
+    background: linear-gradient(to right, #00adb5, #007bff);
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

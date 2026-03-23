@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- ROOT ELEMENT -->
+    <xsd:element name="learnhub">
+        <xsd:complexType>
+            <xsd:sequence>
+
+                <!-- COURSES -->
+                <xsd:element name="courses">
+                    <xsd:complexType>
+                        <xsd:sequence>
+
+                            <xsd:element name="course" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="instructor" type="xsd:string"/>
+                                        <xsd:element name="duration" type="xsd:string"/>
+                                        <xsd:element name="price" type="xsd:integer"/>
+
+                                    </xsd:sequence>
+
+                                    <!-- ATTRIBUTE -->
+                                    <xsd:attribute name="id" type="xsd:string" use="required"/>
+
+                                </xsd:complexType>
+                            </xsd:element>
+
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <!-- CONTACT -->
+                <xsd:element name="contact">
+                    <xsd:complexType>
+                        <xsd:sequence>
+
+                            <xsd:element name="email" type="xsd:string"/>
+                            <xsd:element name="phone" type="xsd:string"/>
+                            <xsd:element name="location" type="xsd:string"/>
+
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
